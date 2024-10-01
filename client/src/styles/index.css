@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "~slick-carousel/slick/slick.css"; 
+@import "~slick-carousel/slick/slick-theme.css"; 
+
+/* Імпорт Google Font для Poppins */
+body {
+    background-color: #f0f0f0;
+    font-family: 'Poppins', sans-serif; /* Встановлюємо Poppins як шрифт за замовчуванням */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif; /* Встановлюємо Poppins для заголовків */
+    color: #333;
+}
+
+/* Липкий футер */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.App {
+  flex: 1;
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
